@@ -1,18 +1,11 @@
 footer {
-    background-color: #f8f9fa;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    height: 100px;
     padding: 20px 0;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    z-index: 1000;
-    border-top: 1px solid #e9ecef;
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
-    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--accent-color);
 }
