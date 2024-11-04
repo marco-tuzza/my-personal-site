@@ -1,34 +1,24 @@
-$font-size-large: 2em;
-$font-size-medium: 1.2em;
-$spacing-small: 10px;
-$spacing-medium: 20px;
-$spacing-large: 50px;
+@import '../../styles/_variables.scss';
 
 .home-container {
     text-align: center;
     padding-top: $spacing-large;
     height: calc(100vh - 200px);
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: $background-color;
+    color: $text-color;
 
     h1 {
         font-size: $font-size-large;
         padding-bottom: $spacing-small;
 
         mark {
-            background-color: var(--accent-color);
-            color: var(--background-color);
+            background-color: $accent-color;
+            color: $background-color;
         }
     }
 
     p {
         font-size: $font-size-medium;
         padding-bottom: $spacing-medium;
-    }
-
-    button {
-        padding: $spacing-small $spacing-medium;
-        font-size: 1em;
-        cursor: pointer;
     }
 }

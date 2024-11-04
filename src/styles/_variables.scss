@@ -1,6 +1,14 @@
-:root {
-    --background-color: #050E12;
-    --text-color: #F8FFFF;
-    --accent-color: #FF8336;
-    --header-height: 100px;
-  }
+/* Colors */
+$background-color: #050E12;
+$text-color: #F8FFFF;
+$accent-color: #FF8336;
+/* Heights */
+$header-height: 100px;
+$footer-height: 100px;
+/* Font size */
+$font-size-large: 2em;
+$font-size-medium: 1.2em;
+/* Spacing */
+$spacing-small: 10px;
+$spacing-medium: 20px;
+$spacing-large: 50px;

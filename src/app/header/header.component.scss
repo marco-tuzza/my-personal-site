@@ -1,17 +1,18 @@
+@import '../../styles/_variables.scss';
+
 header {
-    background-color: (var(--background-color));
-    color: (var(--text-color));
-    height:var(--header-height);
-    border-bottom: 1px solid var(--accent-color);
+    background-color: $background-color;
+    color: $text-color;
+    height: $header-height;
+    border-bottom: 1px solid $accent-color;
     display: flex;
     align-items: center;
     justify-content: center;
 
     nav {
-
         height: 100%;
-        border-right: 1px solid var(--accent-color);
-        border-left: 1px solid var(--accent-color);
+        border-right: 1px solid $accent-color;
+        border-left: 1px solid $accent-color;
 
         ul {
             height: 100%;
@@ -22,17 +23,16 @@ header {
             padding: 0;
 
             li {
-
                 margin: 0rem 2rem;
 
                 a {
                     text-decoration: none;
-                    color: (var(--text-color));
+                    color: $text-color;
                     font-size: 1.2rem;
                     transition: all 0.2s;
-            
+
                     &:hover {
-                        color: (var(--accent-color));
+                        color: $accent-color;
                         text-decoration: underline;
                         text-underline-offset: 1rem;
                     }
