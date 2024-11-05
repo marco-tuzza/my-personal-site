@@ -19,10 +19,11 @@
             mark {
                 background-color: $accent-color;
                 color: $background-color;
+                font-weight: 800;
             }
         }
     
-        p {
+        h2 {
             font-size: $font-size-medium;
             padding-bottom: $spacing-medium;
         }
