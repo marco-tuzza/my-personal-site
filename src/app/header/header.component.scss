@@ -4,10 +4,19 @@ header {
     background-color: $background-color;
     color: $text-color;
     height: $header-height;
-    border-bottom: 1px solid $accent-color;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        color: $text-color;
+        font-size: 1.2rem;
+
+        &#header-logo {
+            margin-left: 2rem;
+        }
+    }
 
     nav {
         height: 100%;
@@ -24,19 +33,14 @@ header {
                 margin: 0rem 2rem;
 
                 a {
-                    text-decoration: none;
-                    color: $text-color;
-                    font-size: 1.2rem;
+                    display: inline-block;
                     transition: all 0.2s;
 
                     &:hover {
                         color: $accent-color;
                         text-decoration: underline;
                         text-underline-offset: 1rem;
-                    }
-
-                    &::before {
-                        content: '> ';
+                        transform: scale(1.1);
                     }
                 }
             }

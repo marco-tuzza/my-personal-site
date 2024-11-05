@@ -8,8 +8,8 @@
     .container {
 
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
         height: 100%;
 
         h1 {
@@ -30,6 +30,10 @@
     
         button {
             width: 150px;
+        }
+
+        .ascii-art {
+            width: 30%;
         }
     }
 }
