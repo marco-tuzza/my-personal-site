@@ -1,6 +1,6 @@
 # My Personal Site
 
-Welcome to my personal website! Built with Angular and leveraging Server-Side Rendering (SSR) and Static Site Generation (SSG) for optimal performance and SEO, this site showcases my portfolio, blog, and more about me.
+Welcome to my personal website! Built with Angular.
 
 ## Project Overview
 
