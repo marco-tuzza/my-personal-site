@@ -7,36 +7,51 @@
 
     .container {
 
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        height: 100%;
 
-            input, textarea {
-                width: 100%;
-                padding: $spacing-small;
-                margin: $spacing-small 0;
-                border: 1px solid $text-color;
-                font-size: $font-size-small;
-            }
+        .form-container {
+            width: 70%;
 
-            button {
-                width: 150px;
-                padding: $spacing-small;
-                margin: $spacing-small 0;
-                border: none;
-                background-color: $accent-color;
-                color: $background-color;
-                font-size: $font-size-small;
-                cursor: pointer;
-                transition: all 0.2s;
-
-                &:hover {
+            form {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                padding-top: $spacing-large;
+    
+                input, textarea {
+                    width: 100%;
+                    padding: $spacing-small;
+                    margin: $spacing-small 0;
+                    border: 1px solid $text-color;
+                    font-size: $font-size-small;
+                }
+    
+                button {
+                    width: 150px;
+                    padding: $spacing-small;
+                    margin: $spacing-small 0;
+                    border: none;
                     background-color: $accent-color;
+                    color: $background-color;
+                    font-size: $font-size-small;
+                    cursor: pointer;
+                    transition: all 0.2s;
+    
+                    &:hover {
+                        background-color: $accent-color;
+                    }
                 }
             }
+        }
+
+        .ascii-art {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
