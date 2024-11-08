@@ -12,28 +12,49 @@
         align-items: center;
         height: 100%;
 
+        .home-text-container{
+            width: 50%;
+        }
+
         h1 {
             font-size: $font-size-large;
-            padding-bottom: $spacing-small;
+            margin-bottom: $spacing-medium;
     
             mark {
                 background-color: $accent-color;
                 color: $background-color;
+                padding: 0px $spacing-small;
                 font-weight: 800;
+            }
+
+            u {
+                color: $accent-color;
+                text-decoration-thickness: 3px;
+                text-underline-offset: 4px;
             }
         }
     
         h2 {
             font-size: $font-size-medium;
-            padding-bottom: $spacing-medium;
+            margin-bottom: $spacing-medium;
+            padding: 0px $spacing-small;
         }
     
         button {
             width: 150px;
+            margin: 0px $spacing-small;
         }
 
         .ascii-art {
-            width: 30%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            pre {
+                color: $accent-color;
+                font-size: 8px;
+            }
         }
     }
 }
