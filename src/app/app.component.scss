@@ -1,0 +1,111 @@
+/* Keyframes */
+@keyframes grain {
+    0%, 100% { transform: translate(0, 0); }
+    10% { transform: translate(-5%, -10%); }
+    20% { transform: translate(-15%, 5%); }
+    30% { transform: translate(7%, -25%); }
+    40% { transform: translate(-5%, 25%); }
+    50% { transform: translate(-15%, 10%); }
+    60% { transform: translate(15%, 0%); }
+    70% { transform: translate(0%, 15%); }
+    80% { transform: translate(3%, 35%); }
+    90% { transform: translate(-10%, 10%); }
+}
+
+@keyframes flicker {
+    0% { opacity: 0; }
+    10% { opacity: .9; }
+    20% { opacity: .99; }
+    30% { opacity: 0; }
+    40% { opacity: .9; }
+    50% { opacity: .99; }
+    60% { opacity: 0; }
+    70% { opacity: .9; }
+    80% { opacity: .99; }
+    90% { opacity: 0; }
+    100% { opacity: .9; }
+}
+
+@keyframes scanline {
+    0% { transform: translateY(100%); }
+}
+
+/* Noise Effect */
+.noise {
+    display: flex;
+    z-index: 800;
+    animation: grain 8s steps(10) infinite;
+    background-image: url(../assets/img/noise.png);
+    height: 400%;
+    left: -50%;
+    top: -150%;
+    width: 300%;
+    background-size: auto;
+    opacity: .2;
+    position: fixed;
+    pointer-events: none;
+}
+
+/* Scanlines */
+.scanlines {
+    z-index: 900;
+    background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.25) 50%), 
+                linear-gradient(90deg, rgba(255,0,0,0.06), rgba(0,255,0,0.03), rgba(0,0,255,0.06));
+    background-size: 100% 2px, 3px 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+}
+
+/* Radial Effect */
+.radial {
+    display: flex;
+    z-index: 1000;
+    background-image: radial-gradient(rgba(0, 255, 4, 0.1), rgba(0,0,0,0.3) 100%);
+    top: 0;
+    left: 0;
+    position: fixed;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+}
+
+/* Flicker Effect */
+.flicker {
+    display: flex;
+    z-index: 950;
+    background: rgba(9,8,8,.05);
+    animation: flicker .05s infinite;
+    animation-timing-function: linear;
+    top: 0;
+    left: 0;
+    position: fixed;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+}
+
+/* Scanline Animation */
+.scanline {
+    display: flex;
+    z-index: 1010;
+    animation: scanline 7.77s linear infinite;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.scanline::after {
+    height: 1px;
+    width: 100%;
+    background: #000;
+    opacity: .5;
+    pointer-events: none;
+    content: '';
+}
