@@ -1,22 +1,22 @@
-@import './styles/_variables.scss';
-@import './styles/_button.scss';
+@import "./styles/_variables.scss";
+@import "./styles/_button.scss";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 button {
-    @include button-style($accent-color, $background-color);
+  @include button-style($accent-color, $background-color);
 }

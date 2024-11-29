@@ -1,58 +1,58 @@
-@import '../../styles/_variables.scss';
+@import "../../styles/_variables.scss";
 
 .contact-container {
-    background-color: $background-color;
-    color: $text-color;
-    height: calc(100vh - 200px);
+  background-color: $background-color;
+  color: $text-color;
+  height: calc(100vh - 200px);
 
-    .container {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 100%;
 
+    .form-container {
+      width: 50%;
+
+      p {
+        margin-top: $spacing-small;
+      }
+
+      form {
         display: flex;
-        align-items: center;
-        justify-self: center;
+        flex-direction: column;
         height: 100%;
+        margin-top: $spacing-large;
 
-        .form-container {
-            width: 50%;
-
-            p {
-                margin-top: $spacing-small;
-            }
-
-            form {
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                margin-top: $spacing-large;
-    
-                input, textarea {
-                    width: 100%;
-                    color: $text-color;
-                    padding: $spacing-small;
-                    margin: $spacing-small 0;
-                    border: 1px solid $accent-color;
-                    font-size: $font-size-small;
-                    font-family: 'JetBrains Mono', monospace;
-                    background-color: transparent;
-                    resize: none;
-                }
-    
-                button {
-                    width: 150px;
-                }
-            }
+        input,
+        textarea {
+          width: 100%;
+          color: $text-color;
+          padding: $spacing-small;
+          margin: $spacing-small 0;
+          border: 1px solid $accent-color;
+          font-size: $font-size-small;
+          font-family: "JetBrains Mono", monospace;
+          background-color: transparent;
+          resize: none;
         }
 
-        .ascii-art {
-            width: 50%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-
-            pre {
-                color: $accent-color;
-                font-size: 8px;
-            }
+        button {
+          width: 150px;
         }
+      }
     }
+
+    .ascii-art {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      pre {
+        color: $accent-color;
+        font-size: 8px;
+      }
+    }
+  }
 }
