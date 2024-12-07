@@ -1,0 +1,47 @@
+@import "../styles/_variables.scss";
+
+.home-container {
+  height: calc(100vh);
+  background-color: $background-color;
+  color: $text-color;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .home-text-container {
+      width: 50%;
+    }
+
+    .name-location-container {
+      margin-bottom: $spacing-medium;
+
+      h1 {
+        font-size: $font-size-large;
+      }
+    }
+
+    h2 {
+      font-size: $font-size-medium;
+      margin-bottom: $spacing-medium;
+    }
+
+    button {
+      width: 150px;
+    }
+
+    .ascii-art {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      pre {
+        color: $accent-color;
+        font-size: 8px;
+      }
+    }
+  }
+}
